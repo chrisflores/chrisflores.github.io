@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Christian Flores</title>
+    
+
+    </style>
+  </head>
+  <body>
+    <h1>Christian Flores</h1>
+    <p>
+        <a href="https://github.com/chrisflores">
+            <img src="https://github.com/chrisflores.png" width="80" height="80" alt="My GitHub account">
+        </a>
+
+        I am so awesome that I had to find something hard to try in order to give failure somewhat of a chance but this javascript stuff is not so tough, so what if I had to do it like forty times before it actually worked.
+    </p>
+  </body>
+</html>
