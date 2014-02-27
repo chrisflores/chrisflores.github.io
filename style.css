@@ -2,17 +2,21 @@
  
 
     body {
-        font: 14px helvetica, sans-serif;
+    	    background-image:url("skulls.jpg");
+        font: 18px/30px helvetica, sans-serif;
+   	 }
+   	 
+   	 .container{
+   	 	 
+   	 	 background-color: rgba(255, 255, 255, 0.5);
+   	 	 width:500px;
+   	 	 margin: auto;
+   	 	 padding: 35px;
    	 }
 
-  p,h1,#content,img{
-  	  margin-left:20%;
-  	  margin-right:20%;
-  	  display:block;
-  	}
   
-  #content{
-  		  border-style:solid;
- 		 border-width:1px;
-  		}
-  
+   	 #profile {
+   	 	
+   	 	 float: left;
+   	 	 margin: 7px 15px 8px 0;
+   	 }
