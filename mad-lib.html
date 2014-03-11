@@ -1,10 +1,10 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Hello, World</title>
-		<style>
+<head>
+<meta charset="utf-8">
+<title>Hello, World</title>
+<style>
 
 body {
     font: 18px/30px helvetica, sans-serif;
@@ -14,112 +14,119 @@ span {
     background: #ff9;
 }
 
-		</style>
-	</head>
-	<body>
-		<p>Alice was beginning to get <span id="adjetive-1">(adjetive)</span> of <span id="verb-1">(verb)</span> by her sister on the bank, 
+</style>
+</head>
+<body>
+<p>Alice was beginning to get <span id="adjetive-1" data-prompt="adjective">_______</span> of <span id="verb-1" data-prompt="verb">_______</span> by her sister on the bank,
 
-		and of <span id="verb-2">(verb)</span> nothing to <span id="verb-3">(verb)</span>: once or twice she had <span id="verb-4">(verb)</span> 
+and of <span id="verb-2" data-prompt="verb">_______</span> nothing to <span id="verb-3" data-prompt="verb">_______</span>: once or twice she had <span id="verb-4" data-prompt="verb">_______</span>
 
-		into the <span id="noun-1">(noun)</span> her sister was reading,
+into the <span id="noun-1" data-prompt="noun">_______</span> her sister was reading,
 
-		but it had no <span id="noun-2">(noun)</span> or <span id="noun-3">(noun)</span> in it, 'and what is the use of a <span id="noun-4">(noun)</span>,'
+but it had no <span id="noun-2" data-prompt="noun">_______</span> or <span id="noun-3" data-prompt="noun">_______</span> in it, 'and what is the use of a <span id="noun-4" data-prompt="noun">_______</span>,'
 
-		thought Alice 'without <span id="noun-5">(noun)</span>or <span id="noun-6">(noun)</span>?'  So she was considering in her own mind (as well as she could, 
+thought Alice 'without <span id="noun-5" data-prompt="noun">_______</span>or <span id="noun-6" data-prompt="noun">_______</span>?' So she was considering in her own mind (as well as she could,
 
-		for the hot day made her feel very <span id="adjetive-2">(adjetive)</span> and <span id="adjetive-3">(adjetive)</span>,
+for the hot day made her feel very <span id="adjetive-2" data-prompt="adjective">________</span> and <span id="adjetive-3" data-prompt="adjective">_______</span>,
 
-		whether the pleasure of making a daisy-chain would be worth
+whether the pleasure of making a daisy-chain would be worth
 
-		the trouble of <span id="verb-5">(verb)</span> and <span id="verb-6">(verb)</span>, when suddenly a White Rabbit with pink <span id="body-part">(body part)</span> ran close by her.
+the trouble of <span id="verb-5" data-prompt="verb">_______</span> and <span id="verb-6" data-prompt="verb">_______</span>, when suddenly a White Rabbit with pink <span id="body-part" data-prompt="body part">________</span> ran close by her.
 
-		There was nothing so VERY remarkable in that; nor did Alice 
+There was nothing so VERY remarkable in that; nor did Alice
 
-		think it so VERY much out of the way to hear the Rabbit say to itself, 
+think it so VERY much out of the way to hear the Rabbit say to itself,
 
-		'Oh dear! Oh dear! I shall be <span id="adjetive-4">(adjetive)</span>!' (when she thought it over afterwards,
+'Oh dear! Oh dear! I shall be <span id="adjetive-4" data-prompt="adjective">_______</span>!' (when she thought it over afterwards,
 
-		it occurred to her that she ought to have wondered at this, but at the time
+it occurred to her that she ought to have wondered at this, but at the time
 
-		it all seemed quite <span id="adjetive-5">(adjetive)</span>); but when the Rabbit actually TOOK A WATCH OUT OF ITS <span id="clothing-1">(clothing piece)</span>-POCKET, 
+it all seemed quite <span id="adjetive-5" data-prompt="adjective">_______</span>); but when the Rabbit actually TOOK A WATCH OUT OF ITS <span id="clothing-1" data-prompt="piece of clothing">_______</span>-POCKET,
 
-		and looked at it, and then hurried on, Alice started to her feet, for it 
+and looked at it, and then hurried on, Alice started to her feet, for it
 
-		flashed across her mind that she had never before seen a rabbit with either a <span id="clothing-2">(clothing piece)</span>-pocket,
+flashed across her mind that she had never before seen a rabbit with either a <span id="clothing-2" data-prompt="piece of clothing">_______</span>-pocket,
 
-		or a watch to take out of it, and burning with curiosity, she <span id="verb-7">(verb)</span> across the <span id="noun-7">(noun)</span> after it, 
+or a watch to take out of it, and burning with curiosity, she <span id="verb-7" data-prompt="verb">_______</span> across the <span id="noun-7" data-prompt="noun">_______</span> after it,
 
-		and fortunately was just in time to see it <span id="verb-8">(verb)</span> down a large rabbit-hole under the hedge. 
+and fortunately was just in time to see it <span id="verb-8" data-prompt="verb">_______</span> down a large rabbit-hole under the hedge.
 
-		</p>
+</p>
 
 
 
-		<script>
-		
-		var placeholders = [
-		// add placeholder words
-		'adjetive-1','verb-1','verb-2','verb-3','verb-4',
-		'noun-1','noun-2','noun-3','noun-4','noun-5','noun-6',
-		'adjetive-2','adjetive-3','verb-5',
-		'verb-6','body-part',
-		'adjetive-4','adjetive-5','clothing-1',
-		'clothing-2',
-		'verb-7','noun-7','verb-8'];
-		
-		//for loop
-		for (var i = 0; i < placeholders.length; i++){
-		
-		var id = placeholders[i];
-		//retrieves span elements
-		var span = document.getElementById(id);
-		//prompt for input from user, replace with inner HTML
-		var word = prompt('Please enter a ' + span.innerHTML);
-		//give word a value = span from the innerHTML
-		span.innerHTML = word
-		
-		}
-		
+<script>
+
+var placeholders = [
+// add placeholder words
+'adjetive-1','verb-1','verb-2','verb-3','verb-4',
+'noun-1','noun-2','noun-3','noun-4','noun-5','noun-6',
+'adjetive-2','adjetive-3','verb-5',
+'verb-6','body-part',
+'adjetive-4','adjetive-5','clothing-1',
+'clothing-2',
+'verb-7','noun-7','verb-8'];
+
+//for loop
+for (var i = 0; i < placeholders.length; i++){
+//define placeholders with a variable 'i'
+	var id = placeholders[i];
+	//variable span (input defined by user) is defined 
+	//by getting the element (tag) id in the document
+	var span = document.getElementById(id);
+	//include an event listener
+	span.addEventListener('click', replaceWord, false);
+	}
+
+function replaceWord(e){
+	//define a target for click event
+	var span = e.target;
+	//set a prompt 
+	var wordPrompt = span.getAttribute('data-prompt');
+	var word = prompt('Please enter a ' + wordPrompt);
+	if (word !== null){
+	//only replace if word *is not* null
+	span.innerHTML = word;
+	}
+}
+
 /*
 
-		document.getElementById('adjetive-1').innerHTML = prompt('Enter and adjetive');
-		document.getElementById('verb-1').innerHTML  = prompt('Enter a verb');
-		document.getElementById('verb-2').innerHTML  = prompt('Enter a verb');
-		document.getElementById('verb-3').innerHTML  = prompt('Enter a verb');
-		document.getElementById('verb-4').innerHTML = prompt('Enter a verb');
+document.getElementById('adjetive-1').innerHTML = prompt('Enter and adjetive');
+document.getElementById('verb-1').innerHTML = prompt('Enter a verb');
+document.getElementById('verb-2').innerHTML = prompt('Enter a verb');
+document.getElementById('verb-3').innerHTML = prompt('Enter a verb');
+document.getElementById('verb-4').innerHTML = prompt('Enter a verb');
 
-		
-		document.getElementById('noun-1').innerHTML    = prompt('Enter a noun');
-		document.getElementById('noun-2').innerHTML   = prompt('Enter a noun');
-		document.getElementById('noun-3').innerHTML    = prompt('Enter a noun');
-		document.getElementById('noun-4').innerHTML   = prompt('Enter a noun');
-		document.getElementById('noun-5').innerHTML    = prompt('Enter a noun');
-		document.getElementById('noun-6').innerHTML   = prompt('Enter a noun');
+document.getElementById('noun-1').innerHTML = prompt('Enter a noun');
+document.getElementById('noun-2').innerHTML = prompt('Enter a noun');
+document.getElementById('noun-3').innerHTML = prompt('Enter a noun');
+document.getElementById('noun-4').innerHTML = prompt('Enter a noun');
+document.getElementById('noun-5').innerHTML = prompt('Enter a noun');
+document.getElementById('noun-6').innerHTML = prompt('Enter a noun');
 
-		
-		document.getElementById('adjetive-2').innerHTML = prompt('Enter and adjetive');
-		document.getElementById('adjetive-3').innerHTML = prompt('Enter and adjetive');
-		document.getElementById('verb-5').innerHTML  = prompt('Enter a verb');
-		
-		document.getElementById('verb-6').innerHTML  = prompt('Enter a verb');
-		document.getElementById('body-part').innerHTML = prompt('Enter a body part');
-		
-		
-		document.getElementById('adjetive-4').innerHTML = prompt('Enter and adjetive');
-		document.getElementById('adjetive-5').innerHTML = prompt('Enter and adjetive');
-		document.getElementById('clothing-1').innerHTML = prompt('Enter a piece of clothing');
+document.getElementById('adjetive-2').innerHTML = prompt('Enter and adjetive');
+document.getElementById('adjetive-3').innerHTML = prompt('Enter and adjetive');
+document.getElementById('verb-5').innerHTML = prompt('Enter a verb');
+document.getElementById('verb-6').innerHTML = prompt('Enter a verb');
+document.getElementById('body-part').innerHTML = prompt('Enter a body part');
+document.getElementById('adjetive-4').innerHTML = prompt('Enter and adjetive');
+document.getElementById('adjetive-5').innerHTML = prompt('Enter and adjetive');
+document.getElementById('clothing-1').innerHTML = prompt('Enter a piece of clothing');
 
-		document.getElementById('clothing-2').innerHTML = prompt('Enter a piece of clothing');
+document.getElementById('clothing-2').innerHTML = prompt('Enter a piece of clothing');
 
 
-		document.getElementById('verb-7').innerHTML  = prompt('Enter a verb');
-		document.getElementById('noun-7').innerHTML   = prompt('Enter a noun');
-		document.getElementById('verb-8').innerHTML = prompt('Enter a verb');
+document.getElementById('verb-7').innerHTML = prompt('Enter a verb');
+document.getElementById('noun-7').innerHTML = prompt('Enter a noun');
+document.getElementById('verb-8').innerHTML = prompt('Enter a verb');
 */
 
-							
-		</script>
+
+</script>
 
 
-	</body>
+</body>
 </html>
+
+
